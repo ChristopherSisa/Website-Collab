@@ -1,21 +1,33 @@
 *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
 
-.header{
-    width: 100%;
-    height: 60px;
-    display: block;
-    background-color: #101010;
-}
+.header {
+        width: 100%;
+        height: 60px;
+        background-color: #101010;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.inner_header{
-    width:1000px;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-    background-color: red;
-}
+.logo {
+        height: 40px;
+        /* Adjust the size as needed /
+  padding-left: 15px; / Add some padding on the left /
+ }
+
+  .header-right a {
+  color: white;
+  padding: 12px 16px; / Add padding for clickable area */
+        text-align: center;
+        display: inline-block;
+    }
+
+    .header-right a:hover {
+        background-color: #333;
+        color: #ddd;
+    }
