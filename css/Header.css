@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    display: block;
+    background-color: #101010;
+}
+
+.inner_header{
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1{
+    color: white;
+    height: 100%;
+    display: table-cell ;
+    vertical-align: middle;
+}
+
+
+.nav{
+    float: right;
+    height: 100%;
+}
+
+.nav a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 1px 20px;
+
+}
+
+.nav a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+}
+
+.nav a:last-child{
+    padding-right: 0;
+}
+
+/* code to make the header responsive (hamburger menu)*/
+
+/*.hamburger {
+    display: none; /* Hidden by default */
+    /*cursor: pointer;
+    float: right;
+  }*/
+  
+
+
+
+.mobile_nav{
+    position:fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: -1;
+    background-color: #101010;
+    padding-top: 120px;
+    transition: 0.4s;
+}
+  
+.mobile_nav.is-active{
+    left: 0;
+    z-index: 1;
+}
+
+.mobile_nav a{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: #101010;
+
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger{
+    display: none;
+
+}
+
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .nav {
+      position: absolute;
+      right: 0;
+      top: 60px;
+      background-color: #101010;
+      display: none;
+      width: 100%;
+    }
+  
+    .nav a {
+      display: block;
+      text-align: center;
+    }
+  
+    .hamburger {
+        float: right;
+        display: block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background: none;
+        appearance: none;
+        outline: none;
+        border: none;
+        margin-top: 12px;
+    }
+
+    .hamburger .bar, .hamburger::after, .hamburger::before{
+        content: '';
+        display:block;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+
+
+    .hamburger.is-active::after{
+        
+        transform: rotate(-45deg) translate(8px, -7px);
+    }
+
+    .hamburger.is-active::before{
+        transform: rotate(45deg)  translate(7px, 6px);
+    }
+    
+    .hamburger.is-active .bar{
+        opacity: 0;
+    }
+
+  }

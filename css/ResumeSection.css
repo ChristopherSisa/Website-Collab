@@ -1,0 +1,64 @@
+.professional-info {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .info-card, .skills-display {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-basis: calc(33% - 20px);
+    text-align: center;
+  }
+  
+  .info-card h2, .skills-display h2 {
+    margin-bottom: 15px;
+  }
+  
+  .skill {
+    margin: 10px 0;
+  }
+  
+  .skill img {
+    height: 24px; /* Adjust based on your icons */
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 8px;
+    margin-top: 5px;
+  }
+  
+  .skill-level {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 20px;
+    transition: width 1s ease;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info-card, .skills-display {
+      flex-basis: 90%;
+    }
+  }
+  

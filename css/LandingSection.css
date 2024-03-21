@@ -1,0 +1,46 @@
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center; /* Ensure text is centered */
+  }
+  
+  /* Intro section with a gradient background */
+  .intro-section {
+    background-image: linear-gradient(135deg, #6E8EFB, #88D3CE); /* Subtle gradient background */
+    color: #fff; /* White text color for better readability */
+    padding: 120px 20px; /* Generous padding for a spacious layout */
+    text-align: center;
+  }
+  
+  .intro-section h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 24px; /* Space between the heading and paragraph */
+    font-weight: 600; /* Medium font weight for the heading */
+  }
+  
+  .intro-section p {
+    max-width: 650px; /* Slightly wider paragraph for better readability */
+    margin: 0 auto 30px; /* Centered paragraph with space below */
+    line-height: 1.6; /* Increased line height for improved readability */
+  }
+  
+  /* Styling for the Call-to-Action (CTA) button */
+  .cta-button {
+    background-color: #ffffff; /* White background for the button for contrast */
+    color: #007bff; /* Use the header's main color for the button text */
+    padding: 12px 36px; /* Slightly larger padding */
+    text-decoration: none;
+    border-radius: 50px; /* More pronounced rounded corners for a modern look */
+    font-weight: 500; /* Medium font weight */
+    transition: all 0.3s ease;
+    border: 2px solid transparent; /* Add a border for a button that can have hover effect */
+  }
+  
+  .cta-button:hover {
+    background-color: transparent;
+    color: #fff; /* White text on hover for contrast */
+    border-color: #ffffff; /* White border on hover */
+  }
+  
