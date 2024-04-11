@@ -1,19 +1,30 @@
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 80px 20px;
-    text-align: center; /* Ensure text is centered */
-  }
-  
-  /* Intro section with a gradient background */
+
   .intro-section {
-    background-image: linear-gradient(135deg, #6E8EFB, #88D3CE); /* Subtle gradient background */
+    height: 400px;
+    background-color: #101010;
     color: #fff; /* White text color for better readability */
-    padding: 120px 20px; /* Generous padding for a spacious layout */
+    padding: 120px 40px; /* Generous padding for a spacious layout */
     text-align: center;
+    background-image: url("/images/christopher.png");
+    background-size: cover;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+  }
+
+  .intro-section .container h1 span{
+    color: #0d911f;
   }
   
+  .intro-section .container{
+    padding-top: 30px;
+    display: block;
+    float: right;
+    width: 50%;
+    
+
+  }
+
   .intro-section h1 {
     font-size: 2.5rem; 
     margin-bottom: 24px; /* Space between the heading and paragraph */
@@ -29,7 +40,7 @@
   /* Styling for the Call-to-Action (CTA) button */
   .cta-button {
     background-color: #ffffff; /* White background for the button for contrast */
-    color: #007bff; /* Use the header's main color for the button text */
+    color: rgb(0, 0, 0); /* Use the header's main color for the button text */
     padding: 12px 36px; /* Slightly larger padding */
     text-decoration: none;
     border-radius: 50px; /* More pronounced rounded corners for a modern look */
@@ -44,3 +55,29 @@
     border-color: #ffffff; /* White border on hover */
   }
   
+/* Media Query for tablets and below */
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column; /* Stack items vertically on small screens */
+    height: 85vh; /* Adjust height to content */
+    background-position: center; /* Center background image */
+    padding: 40px 20px; /* Adjusted padding */
+  }
+
+  .intro-section +.container {
+    max-width: 100%; /* Full width for the container */
+    margin: 20px 0; /* Adjust margin for vertical layout */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .intro-section h1 {
+    font-size: 2rem; /* Slightly smaller font size */
+  }
+}
+
+/* Additional adjustments for smaller devices like mobile phones */
+@media (max-width: 480px) {
+  .intro-section h1 {
+    font-size: 1.75rem; /* Even smaller font size for very small screens */
+  }
+}

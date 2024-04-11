@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html>
+
+<html lang = "en">
+
   <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/Header.css">
     <link rel="stylesheet" type="text/css" href="css/LandingSection.css">
-
-
-    <title> A Sample Webpage </title>
+    <link rel="stylesheet" type="text/css" href="css/ResumeSection.css">
+    <link rel="stylesheet" type="text/css" href="css/ContactSection.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <title> Portfolio Website</title>
   </head>
   
+
   <body>
     <div class="header">
       <div class = "inner_header">
           <div class="logo_container">
-              <h1> MY <span>Site</span> </h1>
+              <h1> MY <span> Portfolio</span> </h1>
           </div>
 
           <button class="hamburger ">
@@ -20,10 +29,10 @@
           </button>
 
           <ul class="nav">
-            <a><li>Home</li></a> 
-            <a><li>About </li></a> 
-            <a><li>Portfolio</li></a> 
-            <a><li>Contact</li></a> 
+            <a><li>HOME</li></a> 
+            <a><li>ABOUT </li></a> 
+            <a><li>PORTFOLIO</li></a> 
+            <a><li>CONTACT</li></a> 
           </ul>
       </div>
     </div>
@@ -36,50 +45,112 @@
 
     <section class="intro-section">
       <div class="container">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I'm John Doe, a professional web developer and designer based in New York. I specialize in creating interactive, user-friendly websites and applications.</p>
+        <h1><span> Welcome </span>to My Portfolio</h1>
+        <p>I'm Christopher Sisa, a professional web developer and designer based in New York. I specialize in creating interactive, user-friendly websites and applications.</p>
         <a href="#projects" class="cta-button">View My Work</a>
       </div>
     </section>
 
-    <section class="professional-info">
+
+    <section class="education-section">
+      <div class="text-container">
+        <h1>
+          EDUCATION 
+        </h1>
+      </div>
       <div class="container">
-    
-        <div class="info-card">
-          <h2>Education</h2>
-          <ul>
-            <li><strong>B.S. Computer Programming and Information Systems</strong> - Farmingdale State College</li>
-            <li><strong>A.A. Liberal Arts</strong> - Suffolk County Community College</li>
-          </ul>
-        </div>
-    
-        <div class="skills-display">
-          <h2>Skills</h2>
-          <div class="skill">
-            <img src="path/to/icon-java.png" alt="Java"> <span>Java</span>
-            <div class="skill-bar"><div class="skill-level" data-level="90"></div></div>
+        <div class="card">
+          <figure class="card-header">
+            <img src="/images/suffolk diploma.jpg" alt="Diploma" class="card-image">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Associate in Arts</h2>
+            <p class="card-subtitle">Suffolk County Community College</p>
+            <p class="card-date">January 17, 2020</p>
+            <div class="card-description">
+              <p>A rigorous program that laid the foundational skills for a career in the arts and sciences.</p>
+            </div>
           </div>
-          <div class="skill">
-            <img src="path/to/icon-html.png" alt="HTML"> <span>HTML</span>
-            <div class="skill-bar"><div class="skill-level" data-level="90"></div></div>
+        </div>
+        <div class="card">
+          <figure class="card-header">
+            <img src="/images/farmingdale diploma.jpg" alt="Diploma" class="card-image">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Bachalor of Science</h2>
+            <p class="card-subtitle">Farmingdale State University</p>
+            <p class="card-date">January 17, 2023</p>
+            <div class="card-description">
+              <p>A rigorous program that laid the foundational skills for a career in the arts and sciences.</p>
+            </div>
           </div>
-          <!-- Add more skills similarly -->
         </div>
-    
-        <div class="info-card">
-          <h2>Work Experience</h2>
-          <p><strong>Freelance Web Developer</strong> - HybridMvmt</p>
-          <p><strong>Web Developer</strong> - ChessNYC</p>
-          <!-- More experiences -->
-        </div>
-    
+      
       </div>
     </section>
     
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-header">
+          <h1 class="section-title">Let's Connect</h1>
+          <p class="section-subtitle">Got a question or proposal, or just want to say hello? Go ahead.</p>
+        </div>
+        <div class="contact-body">
+          <form action="your-server-side-handler" method="POST" class="contact-form">
+            <div class="input-wrapper">
+              <input type="text" id="name" name="name" required>
+              <label for="name">Name</label>
+              <span class="focus-border"></span>
+            </div>
+            <div class="input-wrapper">
+              <input type="email" id="email" name="email" required>
+              <label for="email">Email</label>
+              <span class="focus-border"></span>
+            </div>
+            <div class="input-wrapper">
+              <textarea id="message" name="message" required></textarea>
+              <label for="message">Message</label>
+              <span class="focus-border"></span>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+    
+        <div class="social-media">
+          <h4>Connect with Me</h4>
+          <div class="social-icons">
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/ChristopherSisa" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:sisac@farmingdale.edu" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>        
+      </div>
+    
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Christopher Sisa. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+
     
 
 
     <script src="js/headerScript.js"></script>
     <script src="js/resumeSection.js"></script>
+    <script src="js/footer.js"></script>
   </body>
 </html>

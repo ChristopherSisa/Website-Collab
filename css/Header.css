@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: "Montserrat", sans-serif;
 }
 
 .header{
@@ -32,6 +33,10 @@
     vertical-align: middle;
 }
 
+.logo_container span{
+    color: #0d911f;
+}
+
 
 .nav{
     float: right;
@@ -58,16 +63,6 @@
 }
 
 /* code to make the header responsive (hamburger menu)*/
-
-/*.hamburger {
-    display: none; /* Hidden by default */
-    /*cursor: pointer;
-    float: right;
-  }*/
-  
-
-
-
 .mobile_nav{
     position:fixed;
     top: 60px;

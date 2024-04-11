@@ -1,0 +1,82 @@
+.site-footer {
+    background-color: #101010;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-links, .social-media {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 0;
+  }
+  
+  .footer-links h4, .social-media h4 {
+    color: #0d911f;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links ul, .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer-links ul li a, .social-icons a {
+    color: #a9a9a9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover, .social-icons a:hover {
+    color: #ffffff;
+  }
+  
+  .social-icons a {
+    font-size: 24px; /* Icon size */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #282828;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    color: #a9a9a9;
+    margin: 0;
+  }
+  
+  #year {
+    font-weight: bold;
+  }
+  
+  /* FontAwesome is required for the icons */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .footer-links, .social-media {
+      flex: none; /* Disable flex grow and shrink */
+      width: 100%; /* Full width */
+      margin: 10px 0;
+    }
+  }
+  
